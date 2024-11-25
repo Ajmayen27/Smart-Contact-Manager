@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" xmlns:parent >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+      <h1>This is About page</h1>
+      <hr />
+      <!--fragment-->
+      <div class="host-tag" th:replace="${isLoggedIn} ? ~{base :: parent(~{::section})} : ~{base :: test(~{::#not_login})}">
+
+       <section>
+           <h1> user Is Logged in</h1>
+           <h1>
+               This is new dynamic  content
+           </h1>
+           <h4>
+               This is also a dynamic content
+           </h4>
+       </section>
+       <section id="not_login">
+           <h1> You are Not logged in this page </h1>
+       </section>
+      </div>
+</body>
+</html>

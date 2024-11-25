@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}" >
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+     <div class=" w-1/2 p-4 flex flex-col justify-center items-center space-y-3 mx-auto bg-gray-200">
+         <h1 class="text-3xl font-bold " data-th-text="${name}"> </h1>
+         <p class="text-xl text-gray-700 font-bold">Youtube channel: <span data-th-text="${YoutubeChannel}"></span> </p>
+         <p class="text-xl font-bold"> Githublink: <span data-th-text="${github}"></span> </p>
+         <a class="text-xl" th:href="${github}"> Click here to go my github </a>
+         <p class="text-gray-500">Hello guys this is Ajmayen Fayek ,I'm here to coding a application for you
+             Thats All for todays conversesion ,No more today with best regards to your team.
+         </p>
+         <div><button class="px-2 py-3 rounded bg-blue-700 text-white hover:bg-blue-600 ">Click Here</button></div>
+
+     </div>
+<!--Flowbite-->
+
+
+
+</body>
+<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+</html>
