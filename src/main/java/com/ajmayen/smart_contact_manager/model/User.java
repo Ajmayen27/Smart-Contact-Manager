@@ -1,9 +1,6 @@
 package com.ajmayen.smart_contact_manager.model;
-
 import jakarta.persistence.*;
 import lombok.*;
-
-import java.security.PrivateKey;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,6 +32,7 @@ public class User {
     private boolean emailVerified = false;
     private boolean phoneVerified = false;
 
+    @Enumerated(value = EnumType.STRING)
     private Providers providers = Providers.SELF;
     private String providerUserId;
 
